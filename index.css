@@ -1,0 +1,232 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5493;
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    text-align: left;
+    background-color: #5F2AEB;
+    color: whitesmoke;
+
+}
+header > div {
+    margin:0 10rem ;
+
+}
+.nameIcon{
+    font-size: 120%;
+    font-weight:700;
+    
+    
+}
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.iconos{
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.iconos li{
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.infHeader{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.inf > *{
+    margin: 3rem 0;
+    max-height: 25rem;
+
+}
+.inf h2{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    max-height: 25rem;
+    color: transparent;
+
+
+}
+.imageContainer img{
+    box-sizing: border-box;
+    height: 100%;
+    width: 65%;
+    border: 2rem solid;
+    border-right: 0;
+    border-left: 0;
+}
+
+.inf button{
+    padding: 10px 30px;
+    background-color: whitesmoke;
+    color: #5F2AEB;
+    font-size: 1rem;
+    font-weight: 700;
+    border:none;
+    cursor: pointer;
+    transition:padding .3s ease ;
+}
+.inf button:hover{
+    padding: 15px 35px;
+    color: black;
+}
+
+.container1  {
+    text-align: center;
+    background-color: white;
+    max-width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+}
+
+.container1 h2{
+    letter-spacing: 1px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.item{
+    text-align: center;
+    padding: 1.5rem;
+    margin: 5rem;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 20%;
+}
+
+.items img{
+    margin: 1rem;
+    width: 50px;
+}
+
+.frases{
+    box-sizing: border-box;
+    background-color: #5493;
+    width: 100%;
+}
+
+.frases div{
+    padding: 3rem;
+}
+
+.frase{
+    margin: 5rem 0 0 0;
+    font-size: 4rem;
+    font-weight: 0;
+    letter-spacing: 1px;
+    font-style: italic;
+
+}
+
+.autor{
+    padding-right: 1rem;
+    margin: 0;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: right;
+    
+    
+}
+
+.container2{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.container2 div{
+    color: white;
+    display: flex;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 3.5rem;
+    background-color: #5F2AEB;
+}
+.container2 div .texto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    text-align: left;
+
+}
+
+.container2 div .texto h3{
+    margin: 0;
+}
+
+.container2 div .texto p{
+    margin: 0;
+    margin-top: 0.5rem;
+}
+.container2 div .boton{
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 2rem;
+
+}
+.container2 div .boton button{
+    box-sizing: content-box;
+    background-color: #5F2AEB;
+    padding:0.1rem 0.6rem ;
+    width: 7rem;
+    height: 2.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+
+
+}
+
+footer{
+    background-color: #5F2AEB;
+}
+@media (max-width:1260px) {
+    .infHeader{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .imageContainer{
+        display: flex;
+        justify-content: left;
+    }
+    .items{
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+
+    }
+
+}
